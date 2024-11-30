@@ -331,19 +331,32 @@ section {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 2.5rem;
-    justify-content: space-around;
+    justify-content: center; /* Center content */
+    align-items: center; /* Vertically center items */
 }
 
 article {
     display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    align-items: center; /* Ensure icons and text are vertically aligned */
+    gap: 1rem; /* Space between icon and text */
+    width: auto; /* Remove fixed width to allow flexible sizing */
+    justify-content: flex-start; /* Align content to the start */
+    flex-direction: row; /* Ensure horizontal layout */
 }
 
 article .icon {
     cursor: default;
+    height: 2rem; /* Ensure icon size consistency */
+    width: 2rem; /* Set width to prevent resizing issues */
 }
+
+/* If you want consistent spacing across different screen sizes */
+@media screen and (max-width: 600px) {
+    article {
+        gap: 1.5rem; /* Increase gap for mobile */
+    }
+}
+
 
 /* Project Section */
 #projects {
