@@ -51,6 +51,10 @@
     #profile {
         height: 83vh;
         margin-bottom: 0;
+        display: flex; /* Center content */
+        align-items: center; /* Vertical alignment */
+        justify-content: center; /* Horizontal alignment */
+        flex-direction: column; /* Stack children */
     }
     article {
         font-size: 1rem;
@@ -83,9 +87,18 @@
         text-align: center;
     }
     .section__pic-container {
-        width: auto;
-        height: 46vw;
+        width: 50vw; /* Dynamically scale */
+        height: 50vw; /* Maintain square aspect ratio */
         justify-self: center;
+        display: flex; /* Center child elements */
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto; /* Center within parent */
+    }
+    .section__pic-container img {
+        width: 100%; /* Fill container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%; /* Circular shape */
     }
     .section__text__p2 {
         font-size: 1.25rem;
