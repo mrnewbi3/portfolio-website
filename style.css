@@ -53,8 +53,8 @@ a, .btn {
 }
 
 #theme-switch {
-    height: 50px;
-    width: 50px;
+    height: 60px;
+    width: 60px;
     padding: 0;
     border-radius: 40%;
     background-color: var(--base-color);
